@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -981,7 +982,7 @@ function goToContactPage() {
   &nbsp;
 </div>
 <!-- === EPISODE ARCHIVE EMBED === -->
-
+<div id="show-key" style="display: none;">informap</div>
 <div id="episodes" style="padding: 0 0 40px 0;">
   <h2 style="font-size: 24px; margin-top: 0; font-weight: 700; color: #1a1a1a; margin-bottom: 20px;">Recent Episodes</h2>
   <!DOCTYPE html>
@@ -1614,40 +1615,13 @@ function goToContactPage() {
             }
 
             async determineShowCode(options = {}) {
-                // RESTORED: Original logic from your working code
-                if (options.show && options.show !== 'recent') {
-                    // Verify the show exists in our API data
-                    if (this.showsCache?.shows) {
-                        const foundShow = this.showsCache.shows.find(show => 
-                            show.sh_altid === options.show ||
-                            this.normalizeSlug(show.sh_name) === this.normalizeSlug(options.show)
-                        );
-                        if (foundShow) {
-                            return foundShow.sh_altid;
-                        }
-                        console.warn('KPFK Player: Show not found in API:', options.show);
-                    }
+                const keyEl = document.getElementById('show-key');
+                if (keyEl && keyEl.textContent.trim()) {
+                    return keyEl.textContent.trim();
                 }
-                
-                if (this.container.dataset.show && this.container.dataset.show !== 'recent') {
-                    // Same verification for data attribute
-                    if (this.showsCache?.shows) {
-                        const foundShow = this.showsCache.shows.find(show => 
-                            show.sh_altid === this.container.dataset.show ||
-                            this.normalizeSlug(show.sh_name) === this.normalizeSlug(this.container.dataset.show)
-                        );
-                        if (foundShow) {
-                            return foundShow.sh_altid;
-                        }
-                    }
-                }
-                
-                const urlShow = await this.extractAndMapShowFromURL();
-                if (urlShow) {
-                    return urlShow;
-                }
-                
-                return 'recent';
+
+                console.error('KPFK Player: Show key not found in #show-key element.');
+                return null;
             }
 
             async extractAndMapShowFromURL() {
@@ -2606,15 +2580,15 @@ function goToContactPage() {
              data-grid-threshold="400"
                                      data-mode="0">
                         <li class="c-pod">
-                                    <a href="/on-air/the-lawyers-guild-with-jim-lafferty-and-maria-hall/" class="c-pod__link" tabindex="-1">
-                        <img src="https://mm.aiircdn.com/427/5a036a3851593.jpg" alt="" class="c-pod__img" />
+                                    <a href="/on-air/mitch-jeserich/" class="c-pod__link" tabindex="-1">
+                        <img src="https://mm.aiircdn.com/427/5a2f0d3f873c1.jpg" alt="" class="c-pod__img" />
                     </a>
                                 <div class="c-pod__content">
-                                            <a href="/on-air/the-lawyers-guild-with-jim-lafferty-and-maria-hall/" class="c-pod__link">
-                            <strong class="c-pod__title">Lawyers&#039; Guild, The - with Jim Lafferty and Maria Hall</strong>
+                                            <a href="/on-air/mitch-jeserich/" class="c-pod__link">
+                            <strong class="c-pod__title">Letters &amp; Politics wMitch Jeserich</strong>
                         </a>
-                                        <p class="c-pod__description"><em class="c-pod__emphasis"> 3:00pm -  4:00pm</em> </p>
-                                        <p class="c-pod__description"> A public affairs program where political activists and experts discuss current political developments and progressive movements for social change. Also listener calls.</p>
+                                        <p class="c-pod__description"><em class="c-pod__emphasis"> 4:00pm -  5:00pm</em> </p>
+                                        <p class="c-pod__description">We look at the inside workings of Capitol Hill while also covering what happens at the state legislative level and on the streets.  Basically the struggle between &quot;austerity measures&quot; and public programs</p>
                                     </div>
             </li>
                         
@@ -2635,7 +2609,7 @@ function goToContactPage() {
                             </a>
                                                 <div class="c-pod__content">
                             <a href="/calendar/event/alison-krauss-and-union-station-featuring-jerry-douglas-july-13-2025-greek-theatre/" class="c-pod__title">
-                                <strong>Alison Krauss &amp; Union Station featuring Jerry Douglas July 13, 2025 Greek Theatre</strong>
+                                <strong>Alison Krauss &amp; Union Station featuring Jerry Douglas July 13, 2025 Greek Theatre</strong>
                             </a>
                                                         <time datetime="2025-07-13 19:30:00">Jul 13, 2025</time> 
                                                             at <a href="/calendar/venue/greek-theatre-los-angeles-ca/">Greek Theatre</a>
@@ -2648,7 +2622,7 @@ function goToContactPage() {
                             </a>
                                                 <div class="c-pod__content">
                             <a href="/calendar/event/maoli-live-at-the-greek-theatre-thursday-july-17-2025-730-pm/" class="c-pod__title">
-                                <strong>Maoli Live At The Greek Theatre Thursday July 17, 2025 - 7:30 PM</strong>
+                                <strong>Maoli Live At The Greek Theatre Thursday July 17, 2025 - 7:30 PM</strong>
                             </a>
                                                         <time datetime="2025-07-17 19:30:00">Jul 17, 2025</time> 
                                                             at <a href="/calendar/venue/greek-theatre-los-angeles-ca/">Greek Theatre</a>
@@ -2680,17 +2654,6 @@ function goToContactPage() {
              data-grid-threshold="400"
                                      data-mode="2">
                         <li class="c-pod">
-                                    <a href="/on-air/mitch-jeserich/" class="c-pod__link" tabindex="-1">
-                        <img src="https://mm.aiircdn.com/427/5a2f0d3f873c1.jpg" alt="" class="c-pod__img" />
-                    </a>
-                                <div class="c-pod__content">
-                                            <a href="/on-air/mitch-jeserich/" class="c-pod__link">
-                            <strong class="c-pod__title">Letters &amp; Politics wMitch Jeserich</strong>
-                        </a>
-                                        <p class="c-pod__description"><em class="c-pod__emphasis"> 4:00pm -  5:00pm</em> </p>
-                                    </div>
-            </li>
-                        <li class="c-pod">
                                     <a href="https://www.backgroundbriefing.org/" class="c-pod__link" tabindex="-1">
                         <img src="https://mmo.aiircdn.com/237/6782bf3a15e70.jpeg" alt="" class="c-pod__img" />
                     </a>
@@ -2717,6 +2680,17 @@ function goToContactPage() {
                             <strong class="c-pod__title">Feminist Magazine</strong>
                         </a>
                                         <p class="c-pod__description"><em class="c-pod__emphasis"> 7:00pm -  8:00pm</em> </p>
+                                    </div>
+            </li>
+                        <li class="c-pod">
+                                    <a href="/on-air/el-noticiero/" class="c-pod__link" tabindex="-1">
+                        <img src="https://mmo.aiircdn.com/237/656e1ca765226.jpg" alt="" class="c-pod__img" />
+                    </a>
+                                <div class="c-pod__content">
+                                            <a href="/on-air/el-noticiero/" class="c-pod__link">
+                            <strong class="c-pod__title">El Noticiero</strong>
+                        </a>
+                                        <p class="c-pod__description"><em class="c-pod__emphasis"> 8:00pm -  8:30pm</em> </p>
                                     </div>
             </li>
                         
