@@ -628,40 +628,13 @@
             }
 
             async determineShowCode(options = {}) {
-                // RESTORED: Original logic from your working code
-                if (options.show && options.show !== 'recent') {
-                    // Verify the show exists in our API data
-                    if (this.showsCache?.shows) {
-                        const foundShow = this.showsCache.shows.find(show => 
-                            show.sh_altid === options.show ||
-                            this.normalizeSlug(show.sh_name) === this.normalizeSlug(options.show)
-                        );
-                        if (foundShow) {
-                            return foundShow.sh_altid;
-                        }
-                        console.warn('KPFK Player: Show not found in API:', options.show);
-                    }
+                const keyEl = document.getElementById('show-key');
+                if (keyEl && keyEl.textContent.trim()) {
+                    return keyEl.textContent.trim();
                 }
-                
-                if (this.container.dataset.show && this.container.dataset.show !== 'recent') {
-                    // Same verification for data attribute
-                    if (this.showsCache?.shows) {
-                        const foundShow = this.showsCache.shows.find(show => 
-                            show.sh_altid === this.container.dataset.show ||
-                            this.normalizeSlug(show.sh_name) === this.normalizeSlug(this.container.dataset.show)
-                        );
-                        if (foundShow) {
-                            return foundShow.sh_altid;
-                        }
-                    }
-                }
-                
-                const urlShow = await this.extractAndMapShowFromURL();
-                if (urlShow) {
-                    return urlShow;
-                }
-                
-                return 'recent';
+
+                console.error('KPFK Player: Show key not found in #show-key element.');
+                return null;
             }
 
             async extractAndMapShowFromURL() {
