@@ -198,11 +198,12 @@
         }
 
         .kp-meta {
-            color: #6b7280;
+            color: #374151;
             font-size: 0.85rem;
             margin-bottom: 8px;
             font-family: 'Courier New', monospace;
             letter-spacing: 0.2px;
+            font-weight: 600;
             word-wrap: break-word;
             overflow-wrap: break-word;
         }
@@ -215,7 +216,9 @@
             color: #4b5563;
             font-size: 0.9rem;
             line-height: 1.5;
-            max-height: 3.6em;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
             overflow: hidden;
             position: relative;
             word-wrap: break-word;
@@ -223,6 +226,8 @@
         }
 
         .kp-desc.expanded {
+            display: block;
+            -webkit-line-clamp: unset;
             max-height: none;
         }
 
@@ -304,10 +309,11 @@
         }
 
         .kp-page-info {
-            color: #6b7280;
+            color: #374151;
             font-size: 0.85rem;
             font-family: 'Courier New', monospace;
             letter-spacing: 0.2px;
+            font-weight: 600;
         }
 
         .kp-page-btns {
@@ -370,8 +376,8 @@
 
         .kp-progress {
             background: #444;
-            height: 3px;
-            border-radius: 1px;
+            height: 8px;
+            border-radius: 4px;
             margin-bottom: 12px;
             cursor: pointer;
             overflow: hidden;
@@ -409,8 +415,8 @@
             right: 0;
             top: 50%;
             transform: translateY(-50%);
-            width: 2px;
-            height: 8px;
+            width: 3px;
+            height: 14px;
             background: #fff;
             border-radius: 1px;
             box-shadow: 0 0 4px rgba(0,0,0,0.3);
@@ -765,14 +771,14 @@
             }
 
             formatShowSchedule(showData) {
-                if (!showData.sh_days || !showData.sh_ampm) return 'Recent Episodes';
+                if (!showData.sh_days || !showData.sh_ampm) return 'Streaming from archive.kpfk.org • Listener-powered radio';
                 return `${showData.sh_days} • ${showData.sh_ampm}`;
             }
 
             getDefaultShowInfo() {
-                return { 
-                    title: this.showCode === 'recent' ? 'KPFK Archives' : 'KPFK Show', 
-                    subtitle: this.showCode === 'recent' ? 'Streaming from archive.kpfk.org • Listener-powered radio' : 'Recent Episodes'
+                return {
+                    title: this.showCode === 'recent' ? 'KPFK Archives' : 'KPFK Show',
+                    subtitle: 'Streaming from archive.kpfk.org • Listener-powered radio'
                 };
             }
 
@@ -802,10 +808,12 @@
                             let date = 'Recent';
                             let episodeDate = '';
                             if (item.date) {
-                                date = item.date;
                                 const dateObj = new Date(item.date);
-                                episodeDate = dateObj.toLocaleDateString('en-US', {
+                                date = dateObj.toLocaleDateString('en-US', {
                                     weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'
+                                });
+                                episodeDate = dateObj.toLocaleDateString('en-US', {
+                                    month: 'short', day: 'numeric', year: 'numeric'
                                 });
                             } else if (item.def_time) {
                                 const d = new Date(item.def_time * 1000);
