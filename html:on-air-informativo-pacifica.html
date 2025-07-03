@@ -983,7 +983,7 @@ function goToContactPage() {
 <!-- === EPISODE ARCHIVE EMBED === -->
 
 <div id="episodes" style="padding: 0 0 40px 0;">
-  <h2 style="font-size: 24px; margin-top: 0; font-weight: 700; color: #1a1a1a; margin-bottom: 20px;">Recent Episodes</h2>
+  <h2 style="font-size: 24px; margin-top: 0; font-weight: 800; color: #1a1a1a; margin-bottom: 20px;">Streaming from archive.kpfk.org • Listener-powered radio</h2>
   <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1778,14 +1778,14 @@ function goToContactPage() {
             }
 
             formatShowSchedule(showData) {
-                if (!showData.sh_days || !showData.sh_ampm) return 'Recent Episodes';
+                if (!showData.sh_days || !showData.sh_ampm) return 'Streaming from archive.kpfk.org • Listener-powered radio';
                 return `${showData.sh_days} • ${showData.sh_ampm}`;
             }
 
             getDefaultShowInfo() {
-                return { 
-                    title: this.showCode === 'recent' ? 'KPFK Archives' : 'KPFK Show', 
-                    subtitle: this.showCode === 'recent' ? 'Streaming from archive.kpfk.org • Listener-powered radio' : 'Recent Episodes'
+                return {
+                    title: this.showCode === 'recent' ? 'KPFK Archives' : 'KPFK Show',
+                    subtitle: 'Streaming from archive.kpfk.org • Listener-powered radio'
                 };
             }
 
@@ -1815,10 +1815,12 @@ function goToContactPage() {
                             let date = 'Recent';
                             let episodeDate = '';
                             if (item.date) {
-                                date = item.date;
                                 const dateObj = new Date(item.date);
-                                episodeDate = dateObj.toLocaleDateString('en-US', {
+                                date = dateObj.toLocaleDateString('en-US', {
                                     weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'
+                                });
+                                episodeDate = dateObj.toLocaleDateString('en-US', {
+                                    month: 'short', day: 'numeric', year: 'numeric'
                                 });
                             } else if (item.def_time) {
                                 const d = new Date(item.def_time * 1000);
