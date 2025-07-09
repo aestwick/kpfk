@@ -179,7 +179,7 @@
   <div class="hosts-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
     <div class="host-bio" style="text-align: center; padding: 15px; border-radius: 8px;">
       <!-- 🔧 EDIT: Update host image and alt text -->
-      <img alt="Ruben Tapia" class="host-image" src="https://mmo.aiircdn.com/237/686d8c1833fb7.jpg" style="width: 100%; aspect-ratio: 1; object-fit: cover; object-position: right center; border-radius: 12px; margin-bottom: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" />
+      <img alt="Ruben Tapia" class="host-image" src="https://mmo.aiircdn.com/237/686d8c1833fb7.jpg" style="width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center; border-radius: 12px; margin-bottom: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" />
       
       <!-- 🔧 EDIT: Update host name -->
       <h3 style="margin: 0 0 8px; font-size: 18px; color: #1a1a1a;">Ruben Tapia</h3>
