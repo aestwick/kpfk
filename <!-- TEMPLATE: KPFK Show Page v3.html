@@ -1,0 +1,220 @@
+<!-- TEMPLATE: KPFK Show Page v3.4 | Ultra-clean with head CSS/JS -->
+<!-- === SHOW HEADER BLOCK === -->
+<div class="show-header" style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px; padding: 20px 0;">
+  <div class="show-logo-container" style="flex: 0 0 280px;">
+    <!-- 🔧 EDIT: Update logo image src and alt text for each show -->
+    <img alt="Show logo placeholder" class="show-logo" src="https://placehold.co/280x280/e3f2fd/1565c0?text=SHOW+LOGO" style="width: 100%; height: 280px; object-fit: cover; object-position: center; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.15);" />
+  </div>
+  <style type="text/css">
+  /* === DO NOT EDIT THIS CSS SECTION === */
+  /* Hide redundant AIIR header */
+  .o-headline {
+      display: none !important;
+  }
+
+  #episodes::before {
+      content: "";
+      display: block;
+      height: 100px; /* how much higher you want the scroll to stop */
+      margin-top: -100px; /* negative value to pull content up */
+      visibility: hidden;
+  }
+
+  /* Updated typography and button styling */
+  .show-title, h2, h3 {
+    font-family: 'League Spartan', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  /* Consistent button styling */
+  .cta-button, .contact-button {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-family: 'League Spartan', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 0.5px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: none;
+      cursor: pointer;
+  }
+  
+  .cta-button {
+      background: linear-gradient(90deg, #D9111B, #F41542);
+      color: #ffffff !important;
+      box-shadow: 0 4px 15px rgba(229, 9, 20, 0.3);
+  }
+  
+  .contact-button {
+      background: #555555;
+      color: white !important;
+      box-shadow: none;
+  }
+  
+  .cta-button:hover {
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 6px 20px rgba(229, 9, 20, 0.4);
+  }
+  
+  .contact-button:hover {
+      transform: translateY(-2px) scale(1.03);
+      background: #333333;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+      .show-header { 
+          flex-direction: column; 
+          text-align: center; 
+      }
+      .show-logo-container { 
+          flex: 0 0 200px; 
+      }
+      .show-title { 
+          font-size: 28px; 
+      }
+      .show-tagline { 
+          font-size: 18px; 
+      }
+  }
+  /* === END DO NOT EDIT SECTION === */
+  </style>
+  <div style="flex: 1; min-width: 300px;">
+    <!-- 🔧 EDIT: Update show title -->
+    <h1 class="show-title" style="margin: 0 0 12px; font-size: 36px; line-height: 1.1; color: #1a1a1a;">Show Title</h1>
+
+    <!-- 🔧 EDIT: Update show tagline/description -->
+    <p class="show-tagline" style="margin: 0 0 25px; font-size: 20px; color: #555; font-weight: 400; line-height: 1.3;">Your show tagline here</p>
+
+    <!-- 🔧 EDIT: Update schedule information -->
+    <div class="show-schedule" style="margin-bottom: 8px; padding: 8px 12px; border-radius: 6px; font-weight: 600; display: inline-block; background-color: #f1f3f4; color: #5f6368; font-size: 12px; letter-spacing: 0.5px; text-transform: uppercase;">
+      DAY • TIME • KPFK 90.7 FM
+    </div>
+
+    <!-- 🔧 EDIT: Update host name(s) -->
+    <div style="margin-bottom: 20px; font-size: 14px; color: #666; font-style: italic;">
+      Hosted by Host Name(s)
+    </div>
+
+    <!-- Social Icons -->
+    <div style="margin-bottom: 12px;">
+      <a href="#" target="_blank" style="margin-right: 10px;">
+        <img src="https://cdn.simpleicons.org/x/555555" alt="X (Twitter)" style="width: 20px; height: 20px; vertical-align: middle;">
+      </a>
+      <a href="#" target="_blank">
+        <img src="https://cdn.simpleicons.org/facebook/555555" alt="Facebook" style="width: 20px; height: 20px; vertical-align: middle;">
+      </a>
+    </div>
+
+    <div style="margin: 0;">
+      <a class="cta-button" href="#episodes">🎧 Listen &amp; Archive </a>
+    </div>
+  </div>
+</div>
+<!-- Divider -->
+
+<div style="height: 1px; background: linear-gradient(90deg, transparent, #e0e0e0, transparent); margin: 40px 0 30px 0;">
+  &nbsp;
+</div>
+<!-- === SHOW OVERVIEW SECTION === -->
+
+<div style="padding: 0 0 40px 0;">
+  <h2 style="font-size: 24px; margin-top: 0; margin-bottom: 20px; color: #1a1a1a;">Overview</h2>
+
+  <!-- 🔧 EDIT: Update show description paragraphs -->
+  <p style="font-size: 16px; line-height: 1.6; color: #333333; margin-bottom: 16px;"><strong>Show Title</strong> delivers compelling content for the community. This is where you describe what your show is about, your mission, and what makes it unique.</p>
+
+  <p style="font-size: 16px; line-height: 1.6; color: #333333; margin-bottom: 25px;">Add a second paragraph with more details about your show's approach, style, and impact on listeners.</p>
+  
+  <!-- 🔧 EDIT: Update tags below to match show's topics/format/audience -->
+  <!-- COLOR-CODED TAGS -->
+  <div style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px;">
+    <!-- Topic tags (blue) --><span class="tag" style="display: inline-block; background-color: #e3f2fd; color: #1565c0; padding: 8px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: default;">Topic 1</span> <span class="tag" style="display: inline-block; background-color: #e3f2fd; color: #1565c0; padding: 8px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: default;">Topic 2</span> <span class="tag" style="display: inline-block; background-color: #e3f2fd; color: #1565c0; padding: 8px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: default;">Topic 3</span> <!-- Format tags (green) --> <span class="tag" style="display: inline-block; background-color: #e8f5e8; color: #2e7d32; padding: 8px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: default;">Format 1</span> <span class="tag" style="display: inline-block; background-color: #e8f5e8; color: #2e7d32; padding: 8px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: default;">Format 2</span> <!-- Audience tags (purple) --> <span class="tag" style="display: inline-block; background-color: #f3e5f5; color: #7b1fa2; padding: 8px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: default;">Audience</span>
+  </div>
+</div>
+<!-- Divider -->
+
+<div style="height: 1px; background: linear-gradient(90deg, transparent, #e0e0e0, transparent); margin: 20px 0 30px 0;">
+  &nbsp;
+</div>
+<!-- === HISTORY & LEGACY SECTION === -->
+<!-- 🗑️ OPTIONAL: Delete this entire section (including divider below) if show doesn't need history -->
+<div style="padding: 0 0 40px 0;">
+  <h2 style="font-size: 24px; margin-top: 0; margin-bottom: 20px; color: #1a1a1a;">History &amp; Legacy</h2>
+
+  <!-- 🔧 EDIT: Update history text -->
+  <p style="font-size: 16px; line-height: 1.6; color: #333333; margin-bottom: 16px;">Add your show's history and legacy information here. Describe how the show started, key moments in its development, and its impact on the community over time.</p>
+</div>
+<!-- Divider -->
+
+<div style="height: 1px; background: linear-gradient(90deg, transparent, #e0e0e0, transparent); margin: 20px 0 30px 0;">
+  &nbsp;
+</div>
+<!-- === HOST BIOS SECTION === -->
+<!-- 🗑️ OPTIONAL: Delete this entire section (including divider below) if show doesn't need host bios -->
+<div style="padding: 0 0 40px 0;">
+  <h2 style="font-size: 24px; margin-top: 0; margin-bottom: 25px; color: #1a1a1a;">Hosts</h2>
+
+  <div class="hosts-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
+    <div class="host-bio" style="text-align: center; padding: 15px; border-radius: 8px;">
+      <!-- 🔧 EDIT: Update host image and alt text -->
+      <img alt="Host 1 Name" class="host-image" src="https://placehold.co/280x280/e8f5e8/2e7d32?text=HOST+1+PHOTO" style="width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 12px; margin-bottom: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" />
+      
+      <!-- 🔧 EDIT: Update host name -->
+      <h3 style="margin: 0 0 8px; font-size: 18px; color: #1a1a1a;">Host 1 Name</h3>
+
+      <!-- 🔧 EDIT: Update host bio -->
+      <p style="margin: 0; font-size: 14px; color: #666; line-height: 1.5;">Host 1 bio and background information goes here. Describe their experience, expertise, and what they bring to the show.</p>
+    </div>
+    
+    <div class="host-bio" style="text-align: center; padding: 15px; border-radius: 8px;">
+      <!-- 🔧 EDIT: Update host image and alt text -->
+      <img alt="Host 2 Name" class="host-image" src="https://placehold.co/280x280/f3e5f5/7b1fa2?text=HOST+2+PHOTO" style="width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 12px; margin-bottom: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" />
+      
+      <!-- 🔧 EDIT: Update host name -->
+      <h3 style="margin: 0 0 8px; font-size: 18px; color: #1a1a1a;">Host 2 Name</h3>
+
+      <!-- 🔧 EDIT: Update host bio -->
+      <p style="margin: 0; font-size: 14px; color: #666; line-height: 1.5;">Host 2 bio and background information goes here. Describe their experience, expertise, and what they bring to the show.</p>
+    </div>
+  </div>
+  
+  <!-- Contact Host Button -->
+  <div style="text-align: center; margin-top: 20px;">
+    <button class="contact-button" onclick="goToContactPage()">✉️ Contact Host</button>
+  </div>
+</div>
+<!-- Divider -->
+
+<div style="height: 1px; background: linear-gradient(90deg, transparent, #e0e0e0, transparent); margin: 20px 0 30px 0;">
+  &nbsp;
+</div>
+<!-- === EPISODE ARCHIVE EMBED === -->
+
+<!-- 🔧 EDIT: Update show key to match your show's identifier -->
+<div id="show-key" style="display: none;">
+  showkey
+</div>
+
+<div id="episodes" style="padding: 0 0 40px 0;">
+  <h2 style="font-size: 24px; margin-top: 0; margin-bottom: 20px; color: #1a1a1a;">Recent Episodes</h2>
+  <!-- DO NOT EDIT: Episode player embed -->
+  {{ snippet_html(839) }} <!-- Player content loads here -->
+</div>
+<!-- Divider -->
+
+<div style="height: 1px; background: linear-gradient(90deg, transparent, #e0e0e0, transparent); margin: 20px 0 30px 0;">
+  &nbsp;
+</div>
+<!-- === DONATE CTA SECTION === -->
+<!-- DO NOT EDIT: Keep this section unchanged for all shows -->
+<div style="padding: 0 0 20px 0; text-align: center;">
+  <h2 style="margin-bottom: 15px; font-size: 24px; color: #1a1a1a;">Support Independent Media</h2>
+
+  <p style="font-size: 16px; color: #333333; margin-bottom: 25px; line-height: 1.6;">Help keep independent media and KPFK on the air. Your contribution makes a difference.</p>
+  <a class="cta-button" href="/donate">Donate Now </a>
+</div>
