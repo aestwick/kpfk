@@ -138,15 +138,24 @@
 
 
   <!-- 🔧 EDIT: Update show description paragraphs -->
-  <p style="font-size: 16px; line-height: 1.6; color: #333333; margin-bottom: 16px;"><strong>Show Title</strong> delivers compelling content for the community. This is where you describe what your show is about, your mission, and what makes it unique.</p>
+  <p style="font-size: 16px; line-height: 1.6; color: #333333; margin-bottom: 16px;"><strong>Show Title</strong> [Show description 1]</p>
 
 
-  <p style="font-size: 16px; line-height: 1.6; color: #333333; margin-bottom: 25px;">Add a second paragraph with more details about your show's approach, style, and impact on listeners.</p>
+  <p style="font-size: 16px; line-height: 1.6; color: #333333; margin-bottom: 25px;">[Show description 2]</p>
   
-  <!-- 🔧 EDIT: Update tags below to match show's topics/format/audience -->
-  <!-- COLOR-CODED TAGS -->
-  <div style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px;">
-    <!-- Topic tags (blue) --><span class="tag" style="display: inline-block; background-color: #e3f2fd; color: #1565c0; padding: 8px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: default;">Topic 1</span> <span class="tag" style="display: inline-block; background-color: #e3f2fd; color: #1565c0; padding: 8px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: default;">Topic 2</span> <span class="tag" style="display: inline-block; background-color: #e3f2fd; color: #1565c0; padding: 8px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: default;">Topic 3</span> <span class="tag" style="display: inline-block; background-color: #e3f2fd; color: #1565c0; padding: 8px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: default;">Topic 4</span> <!-- Format tags (green) --> <span class="tag" style="display: inline-block; background-color: #e8f5e8; color: #2e7d32; padding: 8px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: default;">Format 1</span> <span class="tag" style="display: inline-block; background-color: #e8f5e8; color: #2e7d32; padding: 8px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: default;">Format 2</span> <span class="tag" style="display: inline-block; background-color: #e8f5e8; color: #2e7d32; padding: 8px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: default;">Format 3</span> <!-- Audience tags (purple) --> <span class="tag" style="display: inline-block; background-color: #f3e5f5; color: #7b1fa2; padding: 8px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: default;">Audience 1</span> <span class="tag" style="display: inline-block; background-color: #f3e5f5; color: #7b1fa2; padding: 8px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: default;">Audience 2</span>
+  <!-- Topic tags (blue) -->
+  <div id="topic-tags" style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px;">
+    <!-- Dynamic topic tags will be inserted here -->
+  </div>
+
+  <!-- Format tags (green) -->
+  <div id="format-tags" style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px;">
+    <!-- Dynamic format tags will be inserted here -->
+  </div>
+
+  <!-- Audience tags (purple) -->
+  <div id="audience-tags" style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px;">
+    <!-- Dynamic audience tags will be inserted here -->
   </div>
 </div>
 <!-- Divider -->
@@ -162,7 +171,7 @@
 
 
   <!-- 🔧 EDIT: Update history text -->
-  <p style="font-size: 16px; line-height: 1.6; color: #333333; margin-bottom: 16px;">Add your show's history and legacy information here. Describe how the show started, key moments in its development, and its impact on the community over time. <strong>This section can highlight the show's significance and lasting influence.</strong></p>
+  <p style="font-size: 16px; line-height: 1.6; color: #333333; margin-bottom: 16px;">[History and legacy text]</p>
 </div>
 <!-- Divider -->
 
@@ -186,7 +195,7 @@
 
 
       <!-- 🔧 EDIT: Update host bio -->
-      <p style="margin: 0; font-size: 14px; color: #666; line-height: 1.5;">Host 1 bio and background information goes here. Describe their experience, expertise, and what they bring to the show.</p>
+      <p style="margin: 0; font-size: 14px; color: #666; line-height: 1.5;">[Host 1 bio]</p>
     </div>
     
     <div class="host-bio" style="text-align: center; padding: 15px; border-radius: 8px;">
@@ -198,7 +207,7 @@
 
 
       <!-- 🔧 EDIT: Update host bio -->
-      <p style="margin: 0; font-size: 14px; color: #666; line-height: 1.5;">Host 2 bio and background information goes here. Describe their experience, expertise, and what they bring to the show.</p>
+      <p style="margin: 0; font-size: 14px; color: #666; line-height: 1.5;">[Host 2 bio]</p>
     </div>
   </div>
   
@@ -239,6 +248,6 @@
   <h2 style="margin-bottom: 15px; font-size: 24px; color: #1a1a1a;">Support Independent Media</h2>
 
 
-  <p style="font-size: 16px; color: #333333; margin-bottom: 25px; line-height: 1.6;">Help keep independent media and KPFK on the air. Your contribution makes a difference.</p>
+  <p style="font-size: 16px; color: #333333; margin-bottom: 25px; line-height: 1.6;">[Donation appeal text]</p>
   <a class="cta-button" href="/donate">Donate Now </a>
 </div>
