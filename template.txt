@@ -1,4 +1,4 @@
-<!-- TEMPLATE: KPFK Show Page v1.0 | Ultra-clean with head CSS/JS -->
+<!-- TEMPLATE: KPFK Show Page v1.1 | Ultra-clean with head CSS/JS -->
 <!-- === SHOW HEADER BLOCK === -->
 <div class="show-header" style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px; padding: 20px 0;">
   <div class="show-logo-container" style="flex: 0 0 280px;">
