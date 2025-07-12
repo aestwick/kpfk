@@ -1,9 +1,9 @@
-<!-- TEMPLATE: KPFK Show Page v1.1 | Ultra-clean with head CSS/JS -->
+<!-- TEMPLATE: KPFK Show Page v1.0 | Ultra-clean with head CSS/JS -->
 <!-- === SHOW HEADER BLOCK === -->
 <div class="show-header" style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px; padding: 20px 0;">
   <div class="show-logo-container" style="flex: 0 0 280px;">
     <!-- 🔧 EDIT: Update logo image src and alt text for each show -->
-    <img alt="Show logo placeholder" class="show-logo" src="https://placehold.co/280x280/e3f2fd/1565c0?text=SHOW+LOGO" style="width: 100%; height: 280px; object-fit: cover; object-position: center; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.15);" />
+    <img alt="{{logoAlt}}" class="show-logo" src="https://placehold.co/280x280/e3f2fd/1565c0?text=SHOW+LOGO" style="width: 100%; height: 280px; object-fit: cover; object-position: center; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.15);" />
   </div>
   <style type="text/css">
   /* === DO NOT EDIT THIS CSS SECTION === */
@@ -179,7 +179,7 @@
   <div class="hosts-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
     <div class="host-bio" style="text-align: center; padding: 15px; border-radius: 8px;">
       <!-- 🔧 EDIT: Update host image and alt text -->
-      <img alt="{{host1Name}}" class="host-image" src="https://placehold.co/280x280/e8f5e8/2e7d32?text=HOST+1+PHOTO" style="width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center; border-radius: 12px; margin-bottom: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" />
+      <img alt="{{host1Alt}}" class="host-image" src="https://placehold.co/280x280/e8f5e8/2e7d32?text=HOST+1+PHOTO" style="width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center; border-radius: 12px; margin-bottom: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" />
       
       <!-- 🔧 EDIT: Update host name -->
       <h3 style="margin: 0 0 8px; font-size: 18px; color: #1a1a1a;">{{host1Name}}</h3>
@@ -191,7 +191,7 @@
     
     <div class="host-bio" style="text-align: center; padding: 15px; border-radius: 8px;">
       <!-- 🔧 EDIT: Update host image and alt text -->
-      <img alt="{{host2Name}}" class="host-image" src="https://placehold.co/280x280/f3e5f5/7b1fa2?text=HOST+2+PHOTO" style="width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center; border-radius: 12px; margin-bottom: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" />
+      <img alt="{{host2Alt}}" class="host-image" src="https://placehold.co/280x280/f3e5f5/7b1fa2?text=HOST+2+PHOTO" style="width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center; border-radius: 12px; margin-bottom: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" />
       
       <!-- 🔧 EDIT: Update host name -->
       <h3 style="margin: 0 0 8px; font-size: 18px; color: #1a1a1a;">{{host2Name}}</h3>
